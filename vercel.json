@@ -1,0 +1,20 @@
+{
+    "name": "tutelage buddy",
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "build" }
+      },
+      {
+        "src": "/(.*).(js|css|png|jpg|jpeg|gif|svg|ico)$",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/.*", "dest": "/index.html" }
+    ]
+  }
+  
