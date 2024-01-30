@@ -1,0 +1,26 @@
+{
+  "name": "tutelage-buddy",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tutelage",
+  "license": "ISC",
+  "dependencies": {
+    "@sideway/address": "^2.1.4", // Use the latest version of @sideway/address
+    // Add other dependencies as needed
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    // Add other dev dependencies as needed
+  },
+  "resolutions": {
+    "@hapi/address": "^2.1.4", // Resolve to the latest version of @sideway/address
+    // Add resolutions for other deprecated packages as needed
+  }
+}
